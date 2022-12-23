@@ -1,0 +1,124 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    
+    background: url('https://capitalizemytitle.com/wp-content/uploads/2020/12/New-Years-Eve-1-1024x576.png');
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+.holder{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+}
+
+.new_year_text{
+    font-family: 'Rubik Vinyl', cursive;
+    color: #fff;
+    font-size: 65px;
+    word-spacing: 10px;
+    margin-bottom: 30px;
+
+    transition: 0.3s ease;
+    
+}
+.new_year_button{
+    padding: 15px 45px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: fit-content;
+    font-family: 'Rubik Vinyl', cursive;
+    color: black;
+    font-family: 'Rubik Gemstones', cursive;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+    transition: 0.3s linear;
+}
+
+.new_year_button:hover{
+    color: #fff;
+    background-color: rgb(5, 5, 5);
+    transform: scale(1.05);
+}
+
+
+
+.countdown_block{
+    width: 500px;
+    height: 150px;
+}
+
+.countdown_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.countdown_block_animation
+{
+    animation-name: appearing_animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.countdown_block_animation_hide{
+    animation-name: hiding_animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appearing_animation{
+    from{
+        opacity: 0;
+        transform: translateY(500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hiding_animation{
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(500px);
+    }
+}
+
+.countdown_block_item{
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.countdown_block_item_day_number{
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    padding: 10px 0;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Rubik Spray Paint', cursive;
+}
+
+.countdown_block_item__text{
+    background-color: #fff;
+    padding: 10px 0;
+    color: #000;
+    font-size: px;
+    font-weight: 400;
+    font-family: 'Rubik Spray Paint', cursive;
+}
